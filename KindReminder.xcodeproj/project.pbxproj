@@ -13,6 +13,12 @@
 		8BF5104820B65499002C2E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5104620B65499002C2E9B /* Main.storyboard */; };
 		8BF5104A20B65499002C2E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5104920B65499002C2E9B /* Assets.xcassets */; };
 		8BF5104D20B65499002C2E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF5104B20B65499002C2E9B /* LaunchScreen.storyboard */; };
+		8BF5105520B669BC002C2E9B /* CustomReminderVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5105420B669BC002C2E9B /* CustomReminderVCViewController.swift */; };
+		8BF5105920B66BA1002C2E9B /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5105820B66BA1002C2E9B /* ReminderItem.swift */; };
+		8BF5105B20B66DC6002C2E9B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5105A20B66DC6002C2E9B /* DataManager.swift */; };
+		8BF5106120B6B04B002C2E9B /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5106020B6B04B002C2E9B /* RecentTableViewCell.swift */; };
+		8BF5106320B6BE53002C2E9B /* PomoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5106220B6BE53002C2E9B /* PomoViewController.swift */; };
+		8BF5106520B6CD0F002C2E9B /* editViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF5106420B6CD0F002C2E9B /* editViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		8BF5104920B65499002C2E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF5104C20B65499002C2E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF5104E20B65499002C2E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF5105420B669BC002C2E9B /* CustomReminderVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomReminderVCViewController.swift; sourceTree = "<group>"; };
+		8BF5105820B66BA1002C2E9B /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
+		8BF5105A20B66DC6002C2E9B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8BF5106020B6B04B002C2E9B /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		8BF5106220B6BE53002C2E9B /* PomoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoViewController.swift; sourceTree = "<group>"; };
+		8BF5106420B6CD0F002C2E9B /* editViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				8BF5104920B65499002C2E9B /* Assets.xcassets */,
 				8BF5104B20B65499002C2E9B /* LaunchScreen.storyboard */,
 				8BF5104E20B65499002C2E9B /* Info.plist */,
+				8BF5105420B669BC002C2E9B /* CustomReminderVCViewController.swift */,
+				8BF5105820B66BA1002C2E9B /* ReminderItem.swift */,
+				8BF5105A20B66DC6002C2E9B /* DataManager.swift */,
+				8BF5106020B6B04B002C2E9B /* RecentTableViewCell.swift */,
+				8BF5106220B6BE53002C2E9B /* PomoViewController.swift */,
+				8BF5106420B6CD0F002C2E9B /* editViewController.swift */,
 			);
 			path = KindReminder;
 			sourceTree = "<group>";
@@ -139,8 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF5105520B669BC002C2E9B /* CustomReminderVCViewController.swift in Sources */,
 				8BF5104520B65499002C2E9B /* SecondViewController.swift in Sources */,
+				8BF5105B20B66DC6002C2E9B /* DataManager.swift in Sources */,
 				8BF5104120B65499002C2E9B /* AppDelegate.swift in Sources */,
+				8BF5106520B6CD0F002C2E9B /* editViewController.swift in Sources */,
+				8BF5106120B6B04B002C2E9B /* RecentTableViewCell.swift in Sources */,
+				8BF5106320B6BE53002C2E9B /* PomoViewController.swift in Sources */,
+				8BF5105920B66BA1002C2E9B /* ReminderItem.swift in Sources */,
 				8BF5104320B65499002C2E9B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

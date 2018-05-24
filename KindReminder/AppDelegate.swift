@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UserDefaults.standard.set("Chiku",forKey: "userName")
+        UserDefaults.standard.set("Be you the world will adjust.",forKey:"userQuote")
+        UserDefaults.standard.set(false,forKey:"QuoteON")
         return true
     }
 
