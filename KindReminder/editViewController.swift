@@ -10,7 +10,10 @@ import UIKit
 
 class editViewController: UIViewController {
 
+    @IBOutlet weak var quoteText: UITextView!
+    @IBOutlet weak var isOn: UISwitch!
     
+    @IBOutlet weak var nameText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,4 +36,6 @@ class editViewController: UIViewController {
     }
     */
 
+    @IBAction func isOnButton(_ sender: Any) {
+    }
 }

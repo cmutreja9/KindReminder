@@ -15,6 +15,8 @@ public class DataManager {
     static fileprivate func getCurrentDirectory() -> URL {
         
         if let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
+            
+            print(url)
             return url
         }else {
             fatalError("Unable to access document directory")
@@ -95,6 +97,27 @@ public class DataManager {
     static func loadAll<T:Decodable>(_ type: T.Type)->[T]{
         do{
             let files = try FileManager.default.contentsOfDirectory(atPath: getCurrentDirectory().path)
+            
+            
+            var modelObjects = [T]()
+            
+            for filename in files{
+                modelObjects.append(load( filename,with: type))
+                
+            }
+            return modelObjects
+        }catch{
+            fatalError("could not load files")
+        }
+        
+        
+    }
+    
+    
+    
+    static func loadAllFromPath<T:Decodable>(_ type: T.Type, url : URL)->[T]{
+        do{
+            let files = try FileManager.default.contentsOfDirectory(atPath: url.path)
             
             
             var modelObjects = [T]()

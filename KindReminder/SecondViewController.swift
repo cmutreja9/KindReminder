@@ -8,16 +8,43 @@
 
 import UIKit
 
-class SecondViewController: UIViewController{
+class SecondViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
     
     
-    
-    var abc = ["chiku","nona"]
-   
+    var abc = ["Sorry I can't show","and set reminders","but I have UI"]
    
     
+   
     
-    var items = [ReminderItem]()
+    var tableitems = [ReminderItem]()
+   
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+       return abc.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell_one = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        
+        
+      
+        cell_one.textLabel?.text = abc[indexPath.row]
+        
+        return cell_one
+
+    
+    }
+    
+    
+    
+    
+   
+   
+   
+    
+    
+   // var items = [ReminderItem]()
     
    /* func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

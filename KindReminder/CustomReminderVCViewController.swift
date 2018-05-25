@@ -255,4 +255,42 @@ class CustomReminderVCViewController: UIViewController, UIPickerViewDelegate,UIP
         
     }
     
+    
+    
+    func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
+        
+        print("Hey")
+        
+        if mode == "Once"{
+            
+            dateFormatter.dateFormat = "LLLL dd,yyyy"
+            let date1 = dateFormatter.date(from: multiuse.text!)
+            print(date1)
+            
+            dateFormatter.dateFormat = "HH:mm"
+            
+            let time1 = dateFormatter.date(from: time.text!)
+            print(time1)
+            
+            let item = ReminderItem(title: titleText.text!, description: descriptionText.text!, type: typeText.text!, date: date1!, time: time1!, weekday: "", isOn: true, itemId: UUID())
+            
+            
+            item.saveItem()
+            
+            print(item)
+        }else if mode == "Daily"{
+            
+        }else if mode == "Weekly"{
+            
+        }else {
+            
+        }
+        if segue.identifier == "toMain" {
+        let vc = segue.destination as? SecondViewController
+        var temp = DataManager.loadAll(ReminderItem.self)
+        
+        print("abc",temp)
+        vc?.tableitems = DataManager.loadAll(ReminderItem.self)
+        }}
+    
 }
